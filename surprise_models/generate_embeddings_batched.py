@@ -8,8 +8,8 @@ import traceback
 from tqdm import tqdm
 
 # Setup
-BASE_DIR = Path("/deepfreeze/share_read_only/surprise_driving/comma2k19/chunks_processed")
-OUTPUT_DIR = Path("/deepfreeze/user_shares/kennethvuong/surprise_driving/comma2k19/chunks_embedded")
+BASE_DIR = Path("/deepfreeze/share_read_only/surprise_driving/comma2k19/chunks_processed_backup") #update with path
+OUTPUT_DIR = Path("/deepfreeze/user_shares/kennethvuong/surprise_driving/comma2k19/chunks_embedded_backup") #update with new directory
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 MAX_FILES = None  # set to int for debug
 
